@@ -3,9 +3,10 @@
 
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """Return a list of random numbers"""
 
     for index in range(10):
