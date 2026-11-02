@@ -2,16 +2,13 @@
 """Module: Practicing using coroutines"""
 
 import asyncio
-from typing import List
+from typing import Generator
 
 
-async def async_comprehension() -> List[float]:
+async def async_comprehension() -> Generator[float, None, None]:
     """Return a list of random numbers"""
 
     async_generator = __import__('0-async_generator').async_generator
 
-    result = []
     async for i in async_generator():
-        result.append(i)
-
-    return result
+        yield result.append(i)
