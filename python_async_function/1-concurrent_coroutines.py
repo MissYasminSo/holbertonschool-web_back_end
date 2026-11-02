@@ -5,7 +5,7 @@ import asyncio
 import concurrent.futures
 
 
-async def wait_n(n: int, max_delay: int) -> List[float]:
+async def wait_n(n: int, max_delay: int) -> list[float]:
     """Returns a list of floats representing the time delays"""
     wait_random = __import__('0-basic_async_syntax').wait_random
 
